@@ -1,0 +1,237 @@
+/*          Responsive Styles       */
+.js-housing {
+    height: 600px;
+    overflow: scroll;
+}
+
+@media(max-width: 767px) {
+    .js-housing {
+        height: 200px;
+    }
+    .housing-container {
+        float: none;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .map {
+        max-height: 300px;
+    }
+    .map-container {
+        margin-bottom: 20px;
+        float: none;
+    }
+}
+
+/*          Filter Styling          */
+
+.filter-reward {
+    line-height: 30px;
+}
+
+.filter-divider {
+    height: 40px;
+    margin: 5px 15px 5px 15px;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #ffffff;
+}
+
+.filter-nav {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+
+/*      Map Marker CSS      */
+
+.marker {
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.markerHighlight {
+    padding: 1px 2px 1px 2px;
+}
+.sublease-highlight {
+    background-color: #1694b1;
+}
+.promo-highlight {
+    background-color: #608945;
+}
+.markerPrice {
+    display: inline;
+    margin: 0 auto 0 0;
+    padding: 2px 4px 2px 4px;
+}
+.sublease-price {
+    color: #333333;
+    background-color: #f5f5f5;
+}
+.promo-price {
+    color: #608945;
+    background-color: #c5deaf;
+}
+.markerNumber {
+    display: inline;
+    margin: 0 0 0 auto;
+    padding: 2px 4px 2px 4px;
+}
+
+/*   This will be the location of the dollar symbol, so I don't want to remove it just yet.   */
+/*.promo-number {*/
+/*color: #4c753a;*/
+/*background-color: #9ec784;*/
+/*}*/
+
+.markerPoint {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    line-height: 100%;
+}
+.markerPoint img {
+    height: 12px;
+    vertical-align: top;
+}
+
+
+
+/* Accordion & listing CSS */
+.accordion-group {
+    background-color: #f5f5f5;
+}
+
+.accordion-heading a {
+    font-weight: 300;
+    color: #000;
+}
+
+.listing-affiliate {
+    background: #8bae74 linear-gradient(to bottom, #8bae74, #86ba6b);
+    border: 1px solid #608945;
+}
+
+.accordion-inner {
+    border-top: 1px solid #608945;
+}
+
+.width-33 {
+    width: 33%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.listing-wrapper {
+    display: block;
+    padding: 8px 15px;
+}
+
+.listing-promo-title {
+    float: left;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0 .75rem;
+}
+
+.listing-promo-tag {
+    text-align: center;
+    background: #608945;
+    border: 1px solid #9ec784;
+    color: #fff;
+    padding: .2rem;
+}
+
+.listing-promo-tag p {
+    margin: 0 10px 0;
+}
+
+.listing-promo-details {
+    float: right;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.listing-sublease-title {
+    float: left;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 .75rem;
+}
+
+.listing-sublease-details p {
+    float: left;
+    margin: 0 10px 12px;
+    font-weight: 400;
+}
+
+.listing-price {
+    float: right;
+    font-weight: 300;
+    margin: 0 .75rem;
+}
+
+.listing-image {
+    float: left;
+    width: 15%;
+    margin: 2px 0 8px;
+}
+
+.listing-image img {
+    border: 1px solid #608945;
+    width: 4rem;
+    max-height: 4rem;
+}
+
+.listing-info {
+    float: left;
+    width: 85%;
+}
+
+.btn-sublease {
+    float: right;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+/* Applied to both the map marker and listing on hover */
+
+
+.accordion-group.listing-hover {
+    background-color: #8bd9eb;
+    border: 1px solid #2A7F93;
+}
+
+.accordion-group.listing-hover.listing-affiliate {
+    background: #bbdba2;
+    border: 1px solid #4c753a;
+}
+
+.listing-hover .sublease-price {
+    color: #2A7F93;
+    background-color: #8bd9eb;
+}
+
+.listing-hover .promo-price {
+    color: white;
+    background-color: #8cc76e;
+}
+
+/*.listing-hover .sublease-highlight{*/
+/*background-color: #2A7F93;*/
+/*}*/
+
+/*.listing-hover .promo-highlight {*/
+/*background-color: #608945;*/
+/*}*/
+
+.listing-hover {
+    z-index: 555555;
+}
